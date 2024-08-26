@@ -1,28 +1,28 @@
 //Encapsulation:
 
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// class Student{
-//   private:
-//    string name;
-//    int age;
-//    int rollno;
-
-
-//    public:
-//     int getRollno() {
-//       return this -> rollno;
-//     }
-// };
+class Student{
+  private:
+   string name;
+   int age;
+   int rollno;
 
 
-// int main(){
+   public:
+    int getRollno() {
+      return this -> rollno;
+    }
+};
 
-//    Student s1;
-//    cout << "student s1s2" << endl;
 
-// }
+int main(){
+
+   Student s1;
+   cout << "student s1s2" << endl;
+
+}
 
 // Inheritance:
 
