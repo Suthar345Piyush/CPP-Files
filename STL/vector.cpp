@@ -52,3 +52,39 @@ int main(){
 
 
 }
+
+
+
+// Basic program which uses some methods of the Vectors in CPP
+// Like: begin() , end() , cbegin() , cend() , rbegin() , rend() , crbegin() , crend() 
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main(){
+
+  vector<int> piyush;
+
+  for(int i = 1; i <= 5; i++)
+  piyush.push_back(i);
+
+  cout << "\noutput of begin and end: ";
+  for(auto i = piyush.begin(); i!= piyush.end(); i++ )
+  cout << *i << " ";
+
+
+  cout << "\noutput of cbegin and cend: ";
+  for(auto i =  piyush.cbegin(); i != piyush.cend(); i++)
+  cout << *i << " ";
+
+  cout << "\noutput of rbegin and rend: ";
+  for(auto ir =piyush.rbegin(); ir != piyush.rend(); ir++)
+  cout << *ir << " ";
+
+  cout << "\noutput of crbegin and crend: ";
+  for(auto ir= piyush.crbegin(); ir != piyush.crend(); ir++)
+  cout << *ir << " ";
+
+  return 0;
+}
+
