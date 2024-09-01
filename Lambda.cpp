@@ -43,3 +43,42 @@ int main(){
 
    return 0;
 }
+
+
+// To print the file content in the console
+
+
+#include<iostream>
+#include<string>
+
+constexpr int maxbuffer = 1234;
+
+
+using namespace std;
+
+int main(){
+   const char * filename = "fileName.txt";
+   const char * infofile = "Hello, I am Piyush";
+
+
+//    FILE *fh = fopen(filename , "w");
+   
+// // use fputs to write input inside that file
+//    for(int i = 0; i < 5; ++i){
+//       fputs(infofile, fh);
+
+//    }
+// fclose(fh);
+
+char buf[maxbuffer];
+
+FILE *fh = fopen(filename, "r");
+while(fgets(buf,  maxbuffer, fh)){
+   fputs(buf, stdout);
+
+}
+fclose(fh);
+return 0;
+   
+   }
+
