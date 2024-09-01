@@ -14,3 +14,32 @@ int main(){
 
 
 }
+
+
+
+//File handling in cpp
+
+
+#include<iostream>
+#include<string>
+
+
+using namespace std;
+
+int main(){
+
+
+   static const char  * originalfile = "originalFile.txt";
+   static const char * changedfile = "changedFile.txt";
+
+// for changing the file name
+//for open file in any mode:  
+
+// FILE * fh = fopen(originalfile, "w");
+// fclose(fh);
+ // for remove the file use remove()
+  remove(changedfile);
+
+
+   return 0;
+}
