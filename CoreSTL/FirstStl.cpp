@@ -10,3 +10,5 @@ T getBigger(T a , T b){
 int main(){
   cout << getBigger('a' , 'b') << endl;
 }
+
+//Vectors is part of containers of stl in cpp, they are dynamic means they can change their size.
