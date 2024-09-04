@@ -26,3 +26,47 @@ int main(){
 // size() – Returns the number of elements in the list.
 // begin() – begin() function returns an iterator pointing to the first element of the list.
 // end() – end() function returns an iterator pointing to the theoretical last element which follows the last element.
+
+
+//forward list in cpp is singly linked list
+//it tracks only next element of the list
+//1.assign() = it assigns value in forward list.
+
+#include<iostream>
+#include<forward_list>
+using namespace std;
+
+int main(){
+  forward_list<int> number;
+  forward_list<int> number2;
+  forward_list<int> number3;
+
+  number.assign({1, 4 , 6 ,8});
+  number2.assign(6 , 4);
+  number3.assign(number.begin(), number.end());
+
+  cout << "The elements of first forward list: ";
+  for(int &a :  number);
+  cout << a << ' ';
+  cout<< endl;
+
+  cout <<"The elements of second forward list: ";
+  for(int &b : number2);
+  cout << b << ' ';
+  cout << endl;
+
+  cout <<"The elements of third forward list: ";
+  for(int &c: number3);
+  cout << c << ' ';
+  cout << endl;
+
+  return 0;
+
+  
+
+}
+
+
+
+
+
