@@ -61,10 +61,48 @@ int main(){
   cout << endl;
 
   return 0;
-
-  
-
 }
+
+//push_front(), pop_front(), emplace_front();
+//emplace_front = used to insert the element in the start of the list
+
+#include<iostream>
+#include<forward_list>
+using namespace std;
+
+int main(){
+
+
+  forward_list<int> backUp({1, 2, 3, 4, 5 ,6, 7});
+
+  //push_front 
+  backUp.push_front(20);
+
+  cout <<"The list after push_front is: ";
+  for(int &a: backUp)
+  cout << a << " ";
+  cout << endl;
+
+  //emplace_front
+  backUp.emplace_front(67);
+
+  cout << "The list after emplace_front is: ";
+  for(int &a : backUp)
+  cout << a << " ";
+  cout << endl;
+
+  //pop_front()
+
+  backUp.pop_front();
+
+  cout << "The list after pop_front is : ";
+  for(int &a : backUp)
+  cout << a << " ";
+  cout << endl;
+
+  return 0;
+}
+
 
 
 
