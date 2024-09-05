@@ -105,6 +105,52 @@ int main(){
 
 
 
+//insert_after is used for insrerting the element at any position 
+//emplace_after
+//erase_after is used to erase element from particular position.
+
+#include<iostream>
+#include<forward_list>
+using namespace std;
+
+int main(){
+  
+  forward_list<int> blocks{1, 2, 3, 4 ,5 ,6};
+
+  forward_list<int>::iterator ptr;
+
+  ptr = blocks.insert_after(blocks.begin(), {7, 8 , 9});
+  
+  cout << "The cotainer blocks after insert_after is: ";
+  for( int &a : blocks)
+  cout << a << " ";
+  cout << endl;
+
+  ptr = blocks.emplace_after(ptr, 3);
+
+  cout << "The container blocks after emplace_after is: ";
+  for(int &a : blocks)
+  cout << a << " ";
+  cout << endl;
+
+  ptr = blocks.erase_after(ptr);
+
+  cout << "The container blocks after erase_after is: ";
+  for(int &a : blocks)
+  cout << a << " ";
+  cout << endl;
+
+  ptr = blocks.erase_after(blocks.begin(), blocks.end()); // erasing the whole range, erase all the elements after the first element
+  
+  cout << "The container blocks after erase_after is : ";
+  for(int &a : blocks)
+  cout << a << " ";
+  cout << endl;
+
+  return 0;
+}
+
+
 
 
 
