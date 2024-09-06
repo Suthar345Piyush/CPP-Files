@@ -200,6 +200,32 @@ int main(){
 }
 
 
+//splice_after() = trnasfer value from one to another list 
+
+#include<iostream>
+#include<forward_list>
+#include<string>
+using namespace std;
+
+int main(){
+  forward_list<int> name1{20 , 88 , 576 , 78 , 67};
+  forward_list<int> name2{67 , 78  , 89 , 343};
+
+  name2.splice_after(name1.begin() , name2);
+
+  
+  cout << "After using splice_after the name1 is: ";
+  for(int &a: name1)
+  cout << a << " "; 
+  cout << endl;
+
+
+  
+
+  return 0;
+}
+
+
 
 
 
