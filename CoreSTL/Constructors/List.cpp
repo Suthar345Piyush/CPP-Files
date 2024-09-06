@@ -151,6 +151,57 @@ int main(){
 }
 
 
+//remove() = removes the element from the particular list as per the condition
+// remove_if() = remove according to condition of the arguments
+
+#include<iostream>
+#include<forward_list>
+using namespace std;
+
+int main(){
+
+  forward_list<int> lists{1, 2, 3, 4, 5 ,6 };
+
+  lists.remove(5);
+
+  cout << "The lists after remove is: ";
+  for(int &a: lists)
+  cout <<  a << " ";
+  cout << endl;
+
+  lists.remove_if([](int x) {return x > 5;} );
+
+  cout << "The lists after remove_if is : ";
+  for(int &a : lists)
+  cout<< a << " ";
+  cout << endl;
+  return 0;
+}
+
+//clear() = this is used to clear all the elements from the list 
+
+#include<iostream>
+#include<forward_list>
+using namespace std;
+
+int main(){
+
+  forward_list<int> numbers{34, 56 , 89 , 99, 100};
+
+
+   numbers.clear();
+   cout << "The array after clear is: ";
+   for(int &a : numbers)
+   cout << a << " ";
+   cout << endl;
+
+
+   return 0;
+}
+
+
+
+
 
 
 
