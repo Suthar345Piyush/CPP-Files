@@ -122,3 +122,69 @@ sum = sum + stacks.top();
  cout << sum << endl;
  }
 }
+
+//swaping in stack
+
+#include<iostream>
+#include<stack>
+using namespace std;
+
+int main(){
+
+  stack<int> A1;
+  stack<int> A2;
+
+  A1.push(7);
+  A1.push(5);
+  A1.push(8);
+
+  A2.push(2);
+  A2.push(3);
+  A2.push(9);
+
+  A1.swap(A2);
+
+  cout << "A1= ";
+  while(!A1.empty()){
+    cout << A1.top() <<endl;
+    A1.pop();
+  }
+
+  cout << endl<< "A2 = ";
+  while(!A2.empty()){
+    cout << A2.top() << endl;
+    A2.pop();
+  }
+   
+}
+
+//emplace() it add new value on the top of the top of stack
+
+#include<iostream>
+#include<stack>
+using namespace std;
+
+int main(){
+  stack<int> stacks1;
+
+  stacks1.push(7);
+  stacks1.push(6);
+  stacks1.push(4);
+  stacks1.push(3);
+  stacks1.push(9);
+
+  stacks1.emplace(10);
+  stacks1.emplace(77);
+
+
+  while(!stacks1.empty()){
+    cout << stacks1.top() << endl;
+    stacks1.pop();
+  }
+
+
+}
+
+
+
+
