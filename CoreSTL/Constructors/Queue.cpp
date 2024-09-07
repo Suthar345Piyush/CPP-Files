@@ -88,3 +88,45 @@ int main(){
    print_queue(Q2);
 
 }
+
+
+//deque operation in queue
+//in deque the insertion and deletion is done by both ends
+
+#include<iostream>
+#include<deque>
+using namespace std;
+
+int main(){
+
+
+  deque<int> dq;
+
+  dq.push_back(1);
+  dq.push_back(2);
+  dq.push_back(6);
+
+
+  dq.push_front(3);
+  dq.push_front(4);
+
+  cout << "front element: " << dq.front() << endl;
+  cout << "back element: " << dq.back() << endl;
+
+  dq.pop_front();
+  dq.pop_back();
+
+  cout << "size of deque: " << dq.size() << endl;
+
+  if(dq.empty()){
+    cout << "deque is empty";
+  }
+  else{
+    cout << "deque is not empty";
+  }
+
+}
+
+
+
+
