@@ -1,44 +1,44 @@
 //Queue is based on principle of first in first out(FIFO)
-// #include<iostream>
-// #include<queue>
-// using namespace std;
+#include<iostream>
+#include<queue>
+using namespace std;
 
-// int main(){
+int main(){
 
-//   queue<int> Q;
+  queue<int> Q;
 
-//   Q.push(3);
-//   Q.push(6);
-//   Q.push(8);
-//   Q.push(5);
+  Q.push(3);
+  Q.push(6);
+  Q.push(8);
+  Q.push(5);
 
-//   cout << Q.front() << " " << Q.back() << endl;
-//   Q.pop();
-//   cout << Q.front() << " " << Q.back() << endl;
-// }
+  cout << Q.front() << " " << Q.back() << endl;
+  Q.pop();
+  cout << Q.front() << " " << Q.back() << endl;
+}
 
 
 //Queue traversal
 
-// #include<iostream>
-// #include<queue>
-// using namespace std;
+#include<iostream>
+#include<queue>
+using namespace std;
 
-// int main(){
+int main(){
 
-//   queue<int> Qs;
+  queue<int> Qs;
 
-//   Qs.push(1);
-//   Qs.push(2);
-//   Qs.push(3);
-//   Qs.push(4);
+  Qs.push(1);
+  Qs.push(2);
+  Qs.push(3);
+  Qs.push(4);
 
-//   while(Qs.empty() == false){
-//     cout << Qs.front() << " " << Qs.back() << endl;
-//     Qs.pop();
+  while(Qs.empty() == false){
+    cout << Qs.front() << " " << Qs.back() << endl;
+    Qs.pop();
 
-//   }
-// }
+  }
+}
 //time complexcity is same as stack O(1)
 
 //Example of queue ds
